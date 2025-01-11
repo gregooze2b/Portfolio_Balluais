@@ -1,0 +1,106 @@
+/* Global styles */
+body {
+  font-family: Optima, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #7FFFD4;
+}
+
+header {
+  background-color: #008B8B;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.hero {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.projects-preview, .projects, .about {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.project-item {
+  margin-bottom: 20px;
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+
+.contact form {
+  display: grid;
+  gap: 10px;
+}
+
+.contact label {
+  font-size: 16px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact button {
+  background-color: #343;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
+
+/* Style pour la section Hero */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Style pour l'image de profil */
+.profile-image {
+  width: 150px; /* Dimensionne l'image */
+  height: 150px; /* Garde l'image carrée */
+  border-radius: 50%; /* Fait de l'image un cercle */
+  object-fit: cover; /* Garantit que l'image s'adapte bien sans déformation */
+  margin-top: 20px;
+}
+
+.formations-preview, .formations, .about {
+  padding: 20px;
+  background-color: #fff;
+}
