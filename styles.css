@@ -99,6 +99,70 @@ footer {
   object-fit: cover; /* Garantit que l'image s'adapte bien sans déformation */
   margin-top: 20px;
 }
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Grille des rubriques */
+.rubriques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Style des rubriques */
+.rubrique {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet de survol sur les rubriques */
+.rubrique:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre des rubriques */
+.rubrique h2 {
+    margin: 0;
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Texte des rubriques */
+.rubrique p {
+    padding: 15px;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Boutons */
+.rubrique a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #6c63ff;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol sur les boutons */
+.rubrique a:hover {
+    background-color: #5750d8;
+}
 
 .formations-preview, .formations, .about {
   padding: 20px;
