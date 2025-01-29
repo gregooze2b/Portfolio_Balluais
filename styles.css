@@ -37,8 +37,8 @@ footer {
 
 .hero {
     border: 3px solid transparent;
-    background: linear-gradient(white, white) padding-box, 
-                linear-gradient(to right, #ff8c00, #ff0080) border-box;
+    background: linear-gradient(#d5d7bc, #d5d7bc) padding-box, 
+                linear-gradient(to right, #83856d, #414237) border-box;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
