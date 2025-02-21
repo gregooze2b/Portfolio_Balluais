@@ -104,12 +104,29 @@ footer {
   border-radius: 50%; /* Fait de l'image un cercle */
   object-fit: cover; /* Garantit que l'image s'adapte bien sans déformation */
   margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une légère ombre */
+
 }
 /* Conteneur principal */
 .container {
     max-width: 1200px;
     padding: 20px;
 }
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacement entre l’image et le texte */
+}
+.hero-text {
+  max-width: 600px; /* Pour éviter que le texte soit trop large */
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
 /* Grille des rubriques */
 .rubriques {
