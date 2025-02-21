@@ -37,10 +37,12 @@
       <h3>Projet de développement de modèles de balances énergétiques dynamiques (DEB), de deux espèces de bivalves de Polynésie Française.</h3>
       <p>Ce projet a permis, à travers les outils développés, notamment les modèles DEB, de répondre à la question des interactions de compétition trophique entre <i>Pinctada margaritifera</i> et <i>Pinctada maculata</i>, sous le prisme de leur physiologie propre. Il a ainsi permis de dégager les avantages et les inconvénients dans ce contexte précis de compétition.</p>
     </div>
-    <div class="pdf-container">
-    <p>Rapport de stage de Master 2, écrit en Latex : </p>
-    <embed src="PDF\Rapport_M2.pdf" type="application/pdf" width="1200" height="600">
-     <hr>
+  <div class="pdf-section">
+  <p>Rapport de stage de Master 2, écrit en Latex :</p>
+  <button id="togglePdfBtn">Afficher le PDF</button>
+  <div class="pdf-container" id="pdfContainer" style="display: none;">
+    <embed src="PDF\Rapport_M2.pdf" type="application/pdf" width="100%" height="600">
+    <hr>
   </div>
     <div class="project-item">
       <img src="images\ACSI.jpg" alt="Projet 3">
@@ -54,20 +56,25 @@
       <h3>Projet de stage sur la compréhension des impacts d'une exposition chronique aux microplastiques, couplée ou non au réchauffement des eaux, sur une espèce de corail</h3>
       <p>Le but ici a été de produire et d'analyser des données suite à une exposition chronique, sous différentes concentrations de plastiques et de températures, des compartiments énergétiques de l'holobionte de <i>Stylophora pistillata</i>.</p>
     </div>
-      <div class="pdf-container">
-      <p>Poster de stage de Master 1 : </p>
-    <embed src="PDF/Poser_final.pdf" type="application/pdf" width="1200" height="600">
-      <hr>   
+      <div class="pdf-section">
+  <p>Poster de stage de Master 1 :</p>
+  <button id="togglePdfBtn">Afficher le PDF</button>
+  <div class="pdf-container" id="pdfContainer" style="display: none;">
+    <embed src="PDF/Poser_final.pdf" type="application/pdf" width="100%" height="600">
+    <hr>
   </div>
       <div class="project-item">
     <img src="images\OIP.jpg" alt="Projet 5">
     <h3>Projet de l'étude d'impact d'un tronçon de la Restonica à travers la présence d'espèces d'invertébrées aquatiques sentinelles.</h3>
     <p>L'introduction au fonctionnement d'un bureau d'études en hydrobiologie a été le thème central de ce projet, à travers la réalisation d'un Indice Biologique Global (IBG) dans la Restonica. D'autres actions ont également été réalisées avec ce bureau d'études, telles que le carottage de pozzines et la pêche électrique.</p>
         </div>
-    <div class="pdf-container">
-    <p>Rapport de stage de Licence : </p>
-    <embed src="PDF\Rapport_IBGN_Tavignanu_08_04_21.pdf" type="application/pdf" width="1200" height="600">
-     </div>
+         <div class="pdf-section">
+  <p>Rapport de stage de Licence : </p>
+  <button id="togglePdfBtn">Afficher le PDF</button>
+  <div class="pdf-container" id="pdfContainer" style="display: none;">
+    <embed src="PDF\Rapport_IBGN_Tavignanu_08_04_21.pdf" type="application/pdf" width="100%" height="600">
+    <hr>
+  </div>
 <script>
   document.getElementById("togglePdfBtn").addEventListener("click", function() {
     var pdfContainer = document.getElementById("pdfContainer");
