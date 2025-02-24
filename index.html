@@ -5,23 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="sidebar.js"></script>
 </head>
 <body>
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-
-  <div id="main">
-    <button class="openbtn" onclick="openSidebar()">&#9776; Open Sidebar</button>
-    <h1>Bienvenue sur mon Portfolio</h1>
-    <p>Click the button above to open the sidebar menu.</p>
-  </div>
-
   <header>
     <nav>
       <ul>
@@ -34,19 +19,6 @@
     </nav>
   </header>
 
-  <script>
-    function openSidebar() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeSidebar() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-    }
-  </script>
-</body>
-</html>
   <section class="hero">
     <div class="hero-container">
       <img src="images/profile.jpg" alt="Profile" class="profile-image">
@@ -115,7 +87,5 @@
   <footer>
     <p>&copy; Grégoire Balluais, écophysiologue et écotoxicologue marin</p>
   </footer>
-
 </body>
 </html>
-
