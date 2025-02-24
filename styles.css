@@ -229,6 +229,22 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills-list img {
+    width: 24px; /* Ajuste la taille de l'icône */
+    height: 24px;
+    margin-right: 10px;
+}
 
 .pdf-container {
   margin-top: 20px;
