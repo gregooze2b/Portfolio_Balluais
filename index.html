@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header>
@@ -31,6 +33,20 @@
     </div>
   </section>
 <hr style="border: none; height: 10px; background-color: #6495ED; border-radius: 5px;">
+  <section class="gallery">
+    <h1 class="about-title">Galerie Photos</h1>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/photo1.jpg" alt="Image 1"></div>
+            <div class="swiper-slide"><img src="images/photo2.jpg" alt="Image 2"></div>
+            <div class="swiper-slide"><img src="images/photo3.jpg" alt="Image 3"></div>
+            <div class="swiper-slide"><img src="images/photo4.jpg" alt="Image 4"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
   <section class="projects-preview">
     <h2>Pour en apprendre davantage sur mes motivations professionnelles :</h2>
     <div class="project-item">
@@ -82,5 +98,22 @@
   <footer>
     <p>&copy; Grégoire Balluais, écophysiologue et écotoxicologue marin</p>
   </footer>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
 </body>
 </html>
